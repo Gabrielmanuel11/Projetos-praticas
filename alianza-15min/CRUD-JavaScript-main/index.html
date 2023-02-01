@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alianza Register</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>Registro Alumnos</span>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Schedule</th>
+            <th>Start date</th>
+            <th>Goals</th>
+            <th>Profile</th>
+            <th>Materials</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-id">ID</label>
+          <input id="m-id" type="text" name="data[m-id]" required />
+  
+          <label for="m-name">Name</label>
+          <input id="m-name" type="text" name="data[m-name]" required />
+  
+          <label for="m-schedule">Schedule</label>
+          <input id="m-schedule" type="text" name="data[m-schedule]" required />
+
+          <label for="m-startdate">Start date</label>
+          <input id="m-startdate" type="date" name="data[m-startdate]" required />
+
+          <label for="m-goals">Goals</label>
+          <input id="m-goals" type="text" name="data[m-goals]" required />
+
+          <label for="m-profile">Profile</label>
+          <input id="m-profile" type="text" name="data[m-profile]" required />
+
+          <label for="m-materials">Materials</label>
+          <input id="m-materials" type="text" name="data[m-materials]" required />
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js">
+  
+            var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            window.open('page2.html', '_blank');
+
+          });
+        });
+        
+  </script>
+</body>
+
+</html>
