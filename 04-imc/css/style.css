@@ -1,0 +1,96 @@
+body{
+    position: relative;
+width: 1440px;
+height: 1024px;
+
+background: linear-gradient(135deg, #010101 21.87%, #002661 53.65%);;
+}
+
+.section{
+    position: absolute;
+width: 562px;
+height: 362px;
+left: 585px;
+top: 285px;
+}
+
+.peso {
+    position: absolute;
+width: 144px;
+height: 39px;
+left: 517px;
+top: 383px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.inputpeso{
+    position: absolute;
+width: 562px;
+height: 69px;
+left: 500px;
+top: 434px;
+
+background: #D9D9D9;
+border-radius: 40px;
+}
+.altura{
+    position: absolute;
+width: 128px;
+height: 39px;
+left: 500px;
+top: 527px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.inputaltura{
+    position: absolute;
+width: 562px;
+height: 69px;
+left: 489px;
+top: 600px;
+
+background: #D9D9D9;
+border-radius: 40px;
+}
+.resultado{
+    position: absolute;
+width: 472px;
+height: 77px;
+left: 585px;
+top: 874px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 77px;
+
+color: #96FD2F;
+}
+
+button{
+    position: absolute;
+width: 154px;
+height: 48px;
+left: 669px;
+top: 754px;
+color: #96FD2F;
+}
